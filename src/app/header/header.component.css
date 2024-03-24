@@ -1,0 +1,90 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  font-family: 'Roboto', sans-serif; /* Change font style to Roboto with a fallback to sans-serif */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px; /* Increase font size for the logo */
+  font-family: 'Montserrat', sans-serif; /* Change font style to Montserrat with a fallback to sans-serif */
+}
+
+.search input {
+  padding: 10px; /* Increase input padding */
+  border: 1px solid #fff; /* Add border for contrast */
+  border-radius: 4px;
+  margin-left: 100px;
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* Text color */
+  margin-right: 10px; /* Add margin to the right */
+  font-family: 'Open Sans', sans-serif; /* Change font style to Open Sans with a fallback to sans-serif */
+}
+
+.search input::placeholder {
+  color: #ccc; /* Placeholder color */
+  font-family: 'Open Sans', sans-serif; /* Change font style to Open Sans with a fallback to sans-serif */
+}
+
+.search-button {
+  padding: 10px 20px; /* Increase padding */
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+  font-family: 'Roboto', sans-serif; /* Change font style to Roboto with a fallback to sans-serif */
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+  font-family: 'Roboto', sans-serif; /* Change font style to Roboto with a fallback to sans-serif */
+}
+.filters {
+  display: flex;
+  align-items: center;
+  
+}
+
+.filter-item {
+  margin-right: 20px;
+}
+
+.filter-item label {
+  color:white;
+  margin-right: 5px;
+}
+
+.filter-item select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+/* Font Awesome icons */
+.fa-smile,
+.fa-star,
+.fa-filter {
+  margin-right: 5px;
+ 
+}

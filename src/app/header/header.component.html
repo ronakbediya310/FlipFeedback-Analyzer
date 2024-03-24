@@ -1,0 +1,32 @@
+<div class="header-container">
+  <div class="logo">
+    <h1>FlipFeedback Analyzer</h1>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Search..." [(ngModel)]="item" name="searchInput" (keyup.enter)="searchReviews()" autofocus>
+    <button class="search-button" (click)="searchReviews()">Search</button>
+  </div>
+  <div class="filters">
+    <div class="filter-item">
+      <label for="sentimentFilter"><i class="fas fa-smile"></i> Sentiment:</label>
+      <select id="sentimentFilter" [(ngModel)]="sentimentFilter">
+        <option value="">All</option>
+        <option value="positive">Positive</option>
+        <option value="negative">Negative</option>
+        <option value="neutral">Neutral</option>
+      </select>
+    </div>
+    <div class="filter-item">
+      <label for="ratingFilter"><i class="fas fa-star"></i> Rating:</label>
+      <select id="ratingFilter" [(ngModel)]="ratingFilter">
+        <option value="">All</option>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+    </div>
+    <button class="filter-button" (click)="applyFilters()"><i class="fas fa-filter"></i> Apply Filters</button>
+  </div>
+</div>  

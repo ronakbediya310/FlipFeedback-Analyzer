@@ -1,0 +1,21 @@
+<div *ngIf="isLoading" class="loading-spinner-container">
+    <div class="loading-spinner"></div>
+</div>
+<div class="review-card-container">
+    <div class="review-card" *ngFor="let review of reviews">
+        <div class="product-name">{{ review.Product }}</div>
+        <div class="review-info">
+            <p><strong>Reviewer:</strong> {{ review.Reviewer }}</p>
+            <p><strong>Rating:</strong> {{ review.Rating }}</p>
+            <p><strong>Review:</strong> {{ review.Review }}</p>
+        </div>
+
+        <div class="sentiment" [ngClass]="{
+            'positive': review.Sentiment === 'positive',
+            'negative': review.Sentiment === 'negative',
+            'neutral': review.Sentiment === 'neutral'
+        }">
+            <strong>Sentiment:{{ review.Sentiment }}</strong> 
+        </div>
+    </div>
+</div>

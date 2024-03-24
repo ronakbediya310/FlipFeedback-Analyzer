@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Compiled output
+/dist/
+/*.js
+/*.js.map
+/*.css
+/*.css.map
+
+# Angular generated files
+/*.ngsummary.json
+/*.ngfactory.ts
+/*.ngstyle.ts
+
+# IDE/Editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs and test output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test/**/*.xml
+
+# Dependency directories
+/jspm_packages/
+/bower_components/
+
+# Typescript configuration file
+tsconfig.json
+
+# Environment variables
+.env
+.env.prod
